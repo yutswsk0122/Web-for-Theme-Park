@@ -1,0 +1,200 @@
+* {box-sizing: border-box;
+  font-family: sans-serif; 
+
+}
+
+body {
+  margin: 0;
+}
+
+.general-padding {
+  padding: 50px 150px 50px 150px;
+}
+
+.general-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+
+nav {
+  background: white;
+  height: 120px;
+  margin: 0;
+  color: white;
+  align-items: center;
+}
+
+.nav-item a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+
+#menu-wrapper {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 30px;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+ padding: 0;
+}
+
+.logo-wrapper {
+  width: 30%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#blog-section > h1 {
+   margin: 0;
+  }
+
+
+/*------------------------------- SlideShow section -------------------------------*/
+
+
+.general-padding-slideshow {
+  padding: 10px 10px 10px 10px;
+}
+
+#slideshow-general {
+    background: white;
+    position: relative;
+}
+
+/* Hide the images */
+.mySlides {
+  display: none;
+}
+
+/* Next and previous buttons */
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  user-select: none;
+}
+
+/* Location of the next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Location of the previous button */
+.previous {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Dot indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*------------------------------- End SlideShow section -------------------------------*/
+
+
+
+/*-------------------------------  Recommendation Section ------------------------------*/
+
+
+.general-padding-recommendation {
+  padding: 10px 10px 10px 10px;
+}
+
+
+/* Gallery hover recommendation effect to give it a sunken look*/
+div.recommendation-gallery:hover {
+  border: 10px ridge;
+}
+
+/* Gallery recommendation image size*/
+div.recommendation-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Gallery recommendations make each of them a column of same size */
+.recommendation-responsive {
+  padding: 0 px;
+  float: left;
+  width: 50%;
+}
+/*-------------------------------  End Recommendation Section --------------------------*/
+
+/*------------------------------- Start Footer -------------------------------*/
+  
+.footer-block {
+  width: 2000px;
+  height: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding:30px;
+  font-size: 2vw;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+  }
+/*------------------------------- End Footer -------------------------------*/
+
+/*------------------------------- Start Alert Banner -------------------------------*/
+
+/*Set the size and colour of the alert banner*/
+.alert-banner{
+  background: #a52a2a;
+  padding:5px;
+  width: 100%;
+  overflow:hidden;
+}
+
+/*Control the alert banner heading */
+.alert-banner h4 {
+  position: 0px;
+  animation-name: slide-left-to-right-alt;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+/* Animation to move the element from left to the right */
+@keyframes slide-left-to-right-alt {
+  from {
+    margin-left: 5%;
+  }
+
+  to {
+    margin-left: 75%;
+  }
+}
+
+/*------------------------------- End Start Alert Banner -------------------------------*/
+
+
+
+
+

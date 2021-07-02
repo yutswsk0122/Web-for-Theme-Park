@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THEME PARK</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Theme Park" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      
+<!------------------------------- Alert Banner ------------------------------->
+    <div class="alert-banner">
+        <div class="covid-animation-wrapper">
+      <h4>Covid-19 Important Information</h4>
+          </div>      
+    </div>
+      
+<!------------------------------- Navigation Bar ------------------------------->
+    <nav class="general-padding">
+ 
+      <ul id="menu-wrapper">
+        <div class="logo-wrapper">
+          <li class="logo" style="font-size: 2vw; color: black ">Theme Park Logo</li>
+        </div>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About Us</a></li>
+        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+      
+
+<!------------------------------- SlideShow section------------------------------->
+ <section id="blog-section" class="general-padding-slideshow" >
+     
+    <div id="slideshow-general">
+      <div class="mySlides">
+        <img src="images/pexels-brett-sayles-3008103.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="images/pexels-stas-knop-1208055.jpg" style="width:100%">
+      </div>
+         <div class="mySlides">
+        <img src="images/image3.jpg" style="width:100%">
+      </div>
+
+<!-- Next and previous buttons -->
+  <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+
+</section>   
+      
+<!------------------------------- End SlideShow section ------------------------------->
+      
+<!-------------------------------  Recommendation Section ------------------------------>
+      
+<section id="blog-section" class="general-padding-recommendation" >
+      
+<h1 style="font-size: 5vw; color: black ">Enjoy the thrill!!!</h1>
+    
+    <div class="recommendation-responsive">
+      <div class="recommendation-gallery">
+          <img src="images/pexels-craig-adderley-3411141.jpg">
+          <div class="recommendation-desc">
+          </div>
+      </div>
+    </div>
+
+    <div class="recommendation-responsive">
+      <div class="recommendation-gallery">
+          <img src="images/dolphins-3216409_1280.jpg">
+          <div class="recommendation-desc">
+          </div>
+      </div>
+    </div>
+  
+      
+<footer class="footer-block">
+    <span>&copy; Copyright Here</span>
+</footer>
+ 
+</section>   
+<!---------------------------  End Recommendation Section ------------------------------>
+      
+<!------------------------------- SlideShow Script ------------------------------->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+      slideIndex = 1;
+      }    
+  if (n < 1) {
+      slideIndex = slides.length;
+      }
+  for (i = 0; i < slides.length; i++) 
+      {
+      slides[i].style.display = "none";  
+      }
+  for (i = 0; i < dots.length; i++) 
+      {
+      dots[i].className = dots[i].className.replace(" active");
+      }
+  
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+</script>
+      
+      
+  </body>
+</html>
