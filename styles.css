@@ -4,11 +4,11 @@
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .general-padding {
-  padding: 50px 150px 50px 150px;
+    padding: 50px 150px 50px 150px;
 }
 
 .general-grid {
@@ -55,14 +55,14 @@ ul {
 
 #blog-section > h1 {
    margin: 0;
-  }
+}
 
 
 /*------------------------------- SlideShow section -------------------------------*/
 
 
 .general-padding-slideshow {
-  padding: 10px 10px 10px 10px;
+    padding: 10px 50px 10px 50px;
 }
 
 #slideshow-general {
@@ -70,44 +70,44 @@ ul {
     position: relative;
 }
 
-/* Hide the images */
+
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next and previous buttons */
 .previous, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    user-select: none;
 }
 
 /* Location of the next button */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* Location of the previous button */
 .previous {
-  left: 0;
-  border-radius: 3px 0 0 3px;
+    left: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* Dot indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 /*------------------------------- End SlideShow section -------------------------------*/
@@ -118,39 +118,40 @@ ul {
 
 
 .general-padding-recommendation {
-  padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-
-/* Gallery hover recommendation effect to give it a sunken look*/
+/* Hightlight effect */
 div.recommendation-gallery:hover {
-  border: 10px ridge;
+    border: 10px ridge;
 }
 
-/* Gallery recommendation image size*/
 div.recommendation-gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-/* Gallery recommendations make each of them a column of same size */
 .recommendation-responsive {
-  padding: 0 px;
-  float: left;
-  width: 50%;
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+    margin-bottom: 1.5rem;
 }
+
+
+
 /*-------------------------------  End Recommendation Section --------------------------*/
 
 /*------------------------------- Start Footer -------------------------------*/
   
 .footer-block {
-  width: 2000px;
-  height: 100px;
-  display: flex;
-  align-items: left;
-  justify-content: space-between;
-  padding:30px;
-  font-size: 2vw;
+    width: 2000px;
+    height: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding:30px;
+    font-size: 2vw;
 }
 footer {
     display: flex;
@@ -161,38 +162,53 @@ footer {
   }
 /*------------------------------- End Footer -------------------------------*/
 
-/*------------------------------- Start Alert Banner -------------------------------*/
+/*------------------------------- Start  Banner -------------------------------*/
 
-/*Set the size and colour of the alert banner*/
+/*Size and colour */
 .alert-banner{
-  background: #a52a2a;
-  padding:5px;
-  width: 100%;
-  overflow:hidden;
+    background: #a52a2a;
+    padding:5px;
+    width: 100%;
+    overflow:hidden;
 }
 
-/*Control the alert banner heading */
+/*Animation */
 .alert-banner h4 {
-  position: 0px;
-  animation-name: slide-left-to-right-alt;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
+    position: 0px;
+    animation-name: slide-left-to-right-alt;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
 }
 
-/* Animation to move the element from left to the right */
 @keyframes slide-left-to-right-alt {
-  from {
+    from {
     margin-left: 5%;
   }
 
-  to {
+    to {
     margin-left: 75%;
   }
 }
 
-/*------------------------------- End Start Alert Banner -------------------------------*/
+/*------------------------------- End  Banner -------------------------------*/
+
+/*------------------------------- Start Responsive ------------------------------>*/
+
+@media only screen and (max-width: 1366px) {
+    .general-padding {
+        padding: 1.5rem;
+}
+      
+@media only screen and (max-width: 700px) {
+    .recommendation-responsive {
+        width: 100%;
+        margin: 6px 0;
+}
+      
+/*------------------------------- End  Responsive -------------------------------*/   
+
 
 
 
