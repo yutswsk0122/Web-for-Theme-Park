@@ -175,14 +175,14 @@ footer {
 /*Animation */
 .banner h4 {
     position: 0px;
-    animation-name: slide-left-to-right-alt;
+    animation-name: mymove;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
 }
 
-@keyframes slide-left-to-right-alt {
+@keyframes mymove {
     from {
     margin-left: 5%;
   }
