@@ -165,7 +165,7 @@ footer {
 /*------------------------------- Start  Banner -------------------------------*/
 
 /*Size and colour */
-.alert-banner{
+.banner{
     background: #a52a2a;
     padding:5px;
     width: 100%;
@@ -173,7 +173,7 @@ footer {
 }
 
 /*Animation */
-.alert-banner h4 {
+.banner h4 {
     position: 0px;
     animation-name: slide-left-to-right-alt;
     animation-duration: 20s;
